@@ -11,7 +11,6 @@
 .card-filter {
     display: inline-block;
     height: 52px;
-    background: #F6F9FF;
     font-family: 'Montserrat', sans-serif;
     font-weight: 600;
 }
@@ -20,13 +19,14 @@ select {
     height: 52px;
     font-family: 'Montserrat', sans-serif;
     font-weight: 600;
-    background-image: url('/assets/user.png');
-    background-repeat: no-repeat;
-    background-position: 5px;
     color: #888888;
     border-radius: 10px;
     border: none;
     outline: none;
+    background-image: url('/assets/user.png');
+    background-repeat: no-repeat;
+    background-position: 5px;
+    user-select: auto;
 }
 .first-elem {
     text-align: center;
@@ -59,14 +59,49 @@ select {
 }
 .card {
     vertical-align: top;
-    height: 300px;
+    height: 252px;
     width: 45%;
     font-size: 16px;
-    color: red;
     margin: 0px;
     display: inline-block;
-    border: 1px solid black;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    margin-bottom: 10px;
+    border-radius: 30px;
+    background: white;
 }
 .cards {
     padding: 0px;
+}
+.card-title {
+    margin-top: 5;
+    font-size: 20px;
+}
+.card-description {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    margin-top: 30px;
+}
+.card-author {
+    top: 0;
+    position: relative;
+    line-height: 34px;
+    text-align: center;
+    font-size: 12px;
+    width: 124px;
+    height: 34px;
+    border-radius: 8px;
+    background: #F6F9FF;
+    color: #0050EF;
+}
+.card-data {
+    text-align: right;
+    bottom: 20px;
+    right: 10px;
+    position: relative;
+    font-size: 12px;
+    color: #10B2D0;
+}
+.card p {
+    margin-left: 20px;
 }

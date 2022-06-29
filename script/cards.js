@@ -14,10 +14,10 @@ async function getResponse(){
     for (key in content) {
         cards.innerHTML += `
         <li class = "card">
-        <h4>${content[key].title}</h4>
-        <h4>${content[key].description}</h4>
-        <h4>${content[key].author}</h4>`
+        <p class = "card-title">${content[key].title}</p>
+        <p class = "card-description">${content[key].description}</p>
+        <p class = "card-author">${content[key].author}</p><p class = "card-data">${content[key].publishedAt.slice(0, 10)}</p>`
     }
-    //console.log(content[0].description)
+    //console.log(content[0].publishedAt.splice(0,10))
 }
 getResponse()

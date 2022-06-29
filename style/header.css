@@ -4,7 +4,7 @@
     position: absolute;
     top: 0;
     width: 1920px;
-    height: 88;
+    height: 88px;
     right: 0;
 }
 .logo {
@@ -29,4 +29,5 @@
 }
 body {
     height: auto;
+    background: rgba(246,249,255);
 }
