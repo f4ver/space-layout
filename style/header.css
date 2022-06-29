@@ -27,3 +27,6 @@
 .email {
     display: inline-block;
 }
+body {
+    height: auto;
+}

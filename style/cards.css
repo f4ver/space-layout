@@ -1,0 +1,72 @@
+.cards-point {
+    width: 1400px;
+    margin-left: 138px;
+    margin-right: 138px;
+    height: auto;
+    left: 138px;
+    margin-top: 700px;
+    display: flex;
+    position: absolute;
+}
+.card-filter {
+    display: inline-block;
+    height: 52px;
+    background: #F6F9FF;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+}
+select {
+    font-size: 16px;
+    height: 52px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    background-image: url('/assets/user.png');
+    background-repeat: no-repeat;
+    background-position: 5px;
+    color: #888888;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+}
+.first-elem {
+    text-align: center;
+}
+.date-filter {font-size: 16px;
+    height: 52px;
+    display: inline-block;
+    margin-left: 20px;
+}
+.after-date {
+    font-size: 16px;
+    height: 52px;
+    margin-right: 20px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+}
+.before-date {
+    font-size: 16px;
+    height: 52px;
+    margin-right: 20px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+}
+.card-container {
+    position: absolute;
+    width: 1400px;
+    margin-top: 56px;
+}
+.card {
+    vertical-align: top;
+    height: 300px;
+    width: 45%;
+    font-size: 16px;
+    color: red;
+    margin: 0px;
+    display: inline-block;
+    border: 1px solid black;
+}
+.cards {
+    padding: 0px;
+}

@@ -9,6 +9,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/style/header.css">
     <link rel="stylesheet" href="/style/slider.css">
+    <link rel="stylesheet" href="/style/cards.css">
     <title>Space.</title>
 </head>
 <body>
@@ -73,12 +74,22 @@
           <a id="prev" href="#">&#8810;</a>
           <a id="next" href="#">&#8811;</a>
     </div>
-    <div class="cards">
+    <div class="cards-point">
         <div class="card-filter">
-
+            <select class="category">
+                <option class = "first-elem" selected disabled>Выбор автора</option>
+            </select>
+            <div class="date-filter">
+                От 
+                <input  class="after-date" type="date"></input>
+                До 
+                <input class = "before-date" type="date"></input>
+            </div>
         </div>
-        <div class="card-containter">
+        <div class="card-container">
+            <ul class="cards">
 
+            </ul>
         </div>
     </div>
     <script src="/script/slider.js"></script>
