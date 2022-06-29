@@ -5,7 +5,12 @@
     width: 1920px;
     height: 546px;
     overflow: hidden;
+    animation: show 2s;
   }
+  @keyframes show {
+
+    from {opacity: 0;} to {opacity: 1;}
+    }
   #slider ul {
     position: relative;
     list-style: none;
@@ -19,13 +24,16 @@
   #slider ul li {
     position: relative;
     height: 100%;
+    width: 1920px;
     background: linear-gradient(100.68deg, #5991FF 13.6%, #0050EF 94.69%);;
    
     float: left;
   }
   #slider ul li img{
-    width: 1920px;
+    position: absolute;
+    width: 1440px;
     height: 546px;
+    right: 0px;
   }
    
   #slider #prev, #slider #next {
@@ -53,7 +61,7 @@
   }
   .text-slider {
     display: block;
-    margin-left: 100px;
+    margin-left: 300px;
     position: absolute;
   }
   .text-slider-title {
