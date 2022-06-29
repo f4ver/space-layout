@@ -23,7 +23,7 @@ select {
     border-radius: 10px;
     border: none;
     outline: none;
-    background-image: url('/assets/user.png');
+    background-image: url('./assets/user.png');
     background-repeat: no-repeat;
     background-position: 5px;
     user-select: auto;

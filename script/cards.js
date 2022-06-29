@@ -16,7 +16,8 @@ async function getResponse(){
         <li class = "card">
         <p class = "card-title">${content[key].title}</p>
         <p class = "card-description">${content[key].description}</p>
-        <p class = "card-author">${content[key].author}</p><p class = "card-data">${content[key].publishedAt.slice(0, 10)}</p>`
+        <p class = "card-author">${content[key].author}</p>
+        <p class = "card-data">${content[key].publishedAt.slice(0, 10)}</p>`
     }
     //console.log(content[0].publishedAt.splice(0,10))
 }

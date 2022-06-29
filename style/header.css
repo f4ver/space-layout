@@ -28,6 +28,9 @@
     display: inline-block;
 }
 body {
-    height: auto;
+    margin: 0px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
     background: rgba(246,249,255);
 }
