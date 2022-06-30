@@ -7,12 +7,16 @@ var responsiveSlider = function() {
     var items = slideList.querySelectorAll("li").length;
     var prev = document.getElementById("prev");
     var next = document.getElementById("next");
-    
+
+    window.onresize = function(){
     window.addEventListener('resize', function() {
       sliderWidth = slider.offsetWidth;
     });
-    
-    var prevSlide = function() {
+  }
+    if (slider.offsetWidth == 320){
+      sliderWidth = slider.offsetWidth;
+    }else {
+      var prevSlide = function() {
       if(count > 1) {
         count = count - 2;
         slideList.style.left = "-" + count * sliderWidth + "px";
@@ -47,8 +51,5 @@ var responsiveSlider = function() {
     setInterval(function() {
       nextSlide()
     }, 4000);
-    };
-    
-    window.onload = function() {
-    responsiveSlider();  
-    }
+    };}
+    responsiveSlider();

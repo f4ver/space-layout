@@ -99,3 +99,70 @@
     background-color: #0050EF;
     color: white;
   }
+  @media screen and (max-width:320px){
+    #slideWrap {
+      max-width: 320px;
+    }
+    #slider #prev {
+      display: none;
+    }
+    #slider #next {
+      display: none;
+    }
+    #slider {
+      width: 100%;
+      height: 100px;
+      right: 0;
+    }
+    #slider ul li {
+      width: 320px;
+    }
+    #slider ul li+li {
+      display: none;
+    }
+    #slider ul li img {
+      width: 320px;
+      height: 100px;
+    }
+    .text-slider {
+      display: block;
+      margin-left: 15px;
+      position: absolute;
+    }
+    .text-slider-title {
+      margin-top: 10px;
+      width: 200px;
+      word-wrap: break-word;
+      color: white;
+      font-size: 7px;
+      font-weight: 400;
+    }
+    .text-slider-desc {
+      margin-top: 10px;
+      width: 150px;
+      word-wrap: break-word;
+      color: white;
+      font-size: 7px;
+      font-weight: 400;
+      bottom: 230px;
+    }
+    #slider ul {
+      display: block;
+      position: relative;
+      list-style: none;
+      height: 100%;
+      width: 10000%;
+      padding: 0;
+      margin: 0;
+      transition: all 1800ms ease;
+      left: 0;
+    }
+    .aboutBtn {
+      text-align: left;
+      border-radius: 2px;
+      font-size: 6px;
+      margin-top: 10px;
+      width: 50px;
+      height: 20px;
+    }
+  }

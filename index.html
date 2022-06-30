@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="./style/slider.css">
     <link rel="stylesheet" href="./style/cards.css">
     <link rel="stylesheet" href="./style/footer.css">
-    <link rel="icon" href="<%= BASE_URL %>favicon.ico" />
+    <link rel="icon" href="favicon.ico" />
     <title>Space.</title>
 </head>
 <body>
@@ -23,9 +23,11 @@
             <p class="number">
                 88000000000
             </p>
+            <img class="con-phone" src="/assets/phone.png">
             <p class="email">
                 sales@logo.ru
             </p>
+            <img class="con-mail" src="/assets/mail.png">
         </div>
     </div>
     <div id="slider">
@@ -56,7 +58,7 @@
                         Подробнее
                     </button>
                 </div>
-                <img src="/assets/K4C 1.png" alt="">
+                <img src="./assets/K4C 1.png" alt="">
             </li>
             <li>
                 <div class="text-slider">
@@ -70,7 +72,7 @@
                         Подробнее
                     </button>
                 </div>
-                <img src="/assets/K4C 1.png" alt="">
+                <img src="./assets/K4C 1.png" alt="">
             </li>
           </ul>
           <a id="prev" href="#">&#8810;</a>
@@ -78,14 +80,15 @@
     </div>
     <div class="cards-point">
         <div class="card-filter">
-            <select class="category">
+            <select class="category" onChange="authorFilter(this)"">
                 <option class = "first-elem" selected disabled>Выбор автора</option>
+                <option>Все</option>
             </select>
             <div class="date-filter">
                 От 
-                <input  class="after-date" type="date"></input>
+                <input  class="after-date" type="date" id="start-date"></input>
                 До 
-                <input class = "before-date" type="date"></input>
+                <input class = "before-date" onchange="filterDate()" type="date" id="end-date"></input>
             </div>
         </div>
         <div class="card-container">
@@ -123,6 +126,7 @@
             </ul>
         </div>
     </footer>
+    <script src="./script/filter.js"></script>
     <script src="./script/slider.js"></script>
     <script src="./script/cards.js"></script>
 </body>
